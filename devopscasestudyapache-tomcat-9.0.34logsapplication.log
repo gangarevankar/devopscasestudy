@@ -224,3 +224,4 @@ Identify and stop the process that's listening on port 8083 or configure this ap
 2020-05-07 19:04:33.897 [INFO ] [Thread-33] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
 2020-05-07 19:04:33.977 [INFO ] [Thread-33] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2020-05-07 19:04:34.207 [INFO ] [Thread-33] c.z.h.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2020-05-07 19:04:34.259 [INFO ] [Thread-33] c.z.h.HikariDataSource - HikariPool-7 - Shutdown completed.
