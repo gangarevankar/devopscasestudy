@@ -10,5 +10,8 @@ import com.example.devopscasestudy.model.Product;
 @Repository
 public interface ProductRepository extends JpaRepository<Product,Integer> {
 
-	List<Product> findByPriceGreaterThan(double price);
+	List<Product> findByPriceGreaterThan(double price);           //spring framework
+	
+	List<Product>findByProductNameIgnoreCase(String productName);
+
 }
