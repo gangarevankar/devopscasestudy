@@ -3,6 +3,7 @@ package com.example.devopscasestudy.api;
 //import java.util.Arrays;
 import java.util.List;
 
+//import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,13 +14,16 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import com.example.devopscasestudy.model.Product;
 import com.example.devopscasestudy.repo.ProductRepository;
 
 @RestController            //to expose us rest api
 public class ProductAPI {
-
+	
+	private final Logger logger=LoggerFactory.getLogger(getClass());	
+	
 	@Autowired             //look for productrepository obj and inject it here
 	private ProductRepository productRepository;
 	
@@ -29,6 +33,9 @@ public class ProductAPI {
 	
 	@GetMapping("/products")
 	public ResponseEntity<List<Product>> findAll(){
+		
+		logger.info("processing findAll request");
+
 		List<Product> products=productRepository.findAll();
 		return new ResponseEntity<List<Product>>(products,HttpStatus.OK);
 	}
@@ -43,6 +50,8 @@ public class ProductAPI {
 	
 	@GetMapping("/products/find/{name}")
 	public ResponseEntity<List<Product>> findByName(@PathVariable("name") String name){
+		
+		logger.info("processing findbyname request");
 		List<Product> products=productRepository.findByProductNameIgnoreCase(name);
 		return new ResponseEntity<List<Product>>(products,HttpStatus.OK);
 	}
