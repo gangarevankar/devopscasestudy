@@ -44,3 +44,23 @@
 2020-05-11 19:15:18.437 [INFO ] [SpringContextShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2020-05-11 19:15:18.443 [INFO ] [SpringContextShutdownHook] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2020-05-11 19:15:18.496 [INFO ] [SpringContextShutdownHook] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-05-11 19:33:07.356 [INFO ] [main] c.e.d.DevopscasestudyApplicationTests - Starting DevopscasestudyApplicationTests on DESKTOP-BG1HV2K with PID 44396 (started by GangaRevankar in C:\devops\java\devopscasestudy)
+2020-05-11 19:33:07.363 [INFO ] [main] c.e.d.DevopscasestudyApplicationTests - No active profile set, falling back to default profiles: default
+2020-05-11 19:33:09.303 [INFO ] [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-11 19:33:09.449 [INFO ] [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 123ms. Found 1 JPA repository interfaces.
+2020-05-11 19:33:10.612 [INFO ] [main] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-11 19:33:10.836 [INFO ] [main] o.h.Version - HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-11 19:33:11.131 [INFO ] [main] o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-11 19:33:12.042 [INFO ] [main] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2020-05-11 19:33:12.434 [INFO ] [main] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2020-05-11 19:33:12.491 [INFO ] [main] o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-11 19:33:13.984 [INFO ] [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-11 19:33:13.998 [INFO ] [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-11 19:33:15.832 [WARN ] [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-11 19:33:16.433 [INFO ] [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-11 19:33:17.361 [INFO ] [main] c.e.d.DevopscasestudyApplicationTests - Started DevopscasestudyApplicationTests in 10.841 seconds (JVM running for 14.193)
+2020-05-11 19:33:17.890 [INFO ] [main] c.e.d.a.ProductAPI - Processing findAll request
+2020-05-11 19:33:18.232 [INFO ] [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-11 19:33:18.237 [INFO ] [SpringContextShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-11 19:33:18.244 [INFO ] [SpringContextShutdownHook] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-05-11 19:33:18.296 [INFO ] [SpringContextShutdownHook] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
